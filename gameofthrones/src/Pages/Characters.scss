@@ -1,0 +1,76 @@
+.page{
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  justify-content: space-between;
+  width: 80%;
+  gap: 15px;
+  overflow-y: scroll;
+  height: 400px;
+
+  img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  img:hover {
+    box-shadow: 2px 5px 5px white;
+  }
+}
+
+.characters::-webkit-scrollbar {
+  width: 2px;
+  scrollbar-width: thin;
+}
+
+.characters::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+
+.personajes {
+  border-radius: 10px;
+}
+
+.personajes:hover {
+  transform: scale(1.1);
+}
+
+
+.imagen {
+  position: relative;
+}
+
+.nombre {
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.927);
+  padding: 4px;
+  font-weight: bold;
+  font-size: 10px;
+  white-space: nowrap;
+  color: white;
+}

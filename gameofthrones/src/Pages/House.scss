@@ -1,0 +1,59 @@
+.pagee {
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  justify-content: space-around;
+  width: 80%;
+  gap: 17px;
+  overflow-y: scroll;
+  height: 400px;
+  overflow-x: hidden;
+
+  img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  img:hover {
+    box-shadow: 2px 5px 5px white;
+  }
+}
+.houses::-webkit-scrollbar {
+  width: 2px;
+  scrollbar-width: thin;
+}
+
+.houses::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+
+.homes {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+}
+.homes:hover {
+  transform: scale(1.1);
+}
